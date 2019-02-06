@@ -4,8 +4,8 @@ $(document).ready(function () {
         $('#modalInner').css('opacity','1');
 
         setTimeout(() => {
-            $('#modalInner').css('box-shadow', '10px 21px rgba(0,0,0,0.7)');
-        }, 200);
+            $('#modalInner').css('box-shadow', 'rgba(0, 0, 0, 0.7) 29px 42px');
+        }, 100);
     }, 1900);
 
     setInterval(() => {
@@ -23,10 +23,19 @@ $(document).ready(function () {
 function openFullscreen() {
 
     $('main').css('filter','brightness(1)');
-    $('#modalText').css('opacity','0');
-    $('#modal').css('opacity','0');
-    $('#modalInner').css('opacity','0');
-    
+    setTimeout(() => {
+
+        $('#modalInner').css('box-shadow', 'rgba(0, 0, 0, 0.7) 0px 0px');
+        setTimeout(() => {
+            $('#modalInner').css('opacity','0');
+        $('#modalText').css('opacity','0');
+        }, 300);        
+
+        setTimeout(() => {
+            $('#modal').css('opacity','0');
+        }, 600);
+
+    }, 150);   
     
     setTimeout(() => {
         $('#modalInner').css('display','none');
@@ -44,19 +53,26 @@ function openFullscreen() {
 
         $
 
-    }, 700);    
+    }, 1000);    
   }
 
   function noFullScreen()
   {
-    $('main').css('filter','brightness(1)')
-    $('#modalInner').css('opacity','0');
-    $('#modalText').css('opacity','0');
-    $('#modal').css('opacity','0');
+    $('main').css('filter','brightness(1)');
     setTimeout(() => {
-        $('#modalInner').css('display','none');
-        $('#modal').css('display','none');
-    }, 700);
+
+        $('#modalInner').css('box-shadow', 'rgba(0, 0, 0, 0.7) 0px 0px');
+        setTimeout(() => {
+            $('#modalInner').css('opacity','0');
+        $('#modalText').css('opacity','0');
+        }, 300);        
+
+        setTimeout(() => {
+            $('#modal').css('opacity','0');
+            $('#modal').css('display','none');           
+        }, 600);
+
+    }, 150);
   }
 
 
