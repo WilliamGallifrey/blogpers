@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'I-pixel-u';
+    src: url('../I-pixel-u.ttf');
+}
+
+@font-face {
+    font-family: 'PIXELADE';
+    src: url("../PIXELADE.TTF");
+}
+
+*{
+    border:0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'I-pixel-u';
+}
+body
+{
+    background-color: black;
+    overflow: hidden;
+}
+
+a
+{
+    color:blue;
+}
+
+a:hover
+{
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+header, article
+{margin: 0 1%;}
+
+div{margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+header
+{
+height: auto;
+padding-top: 10px;
+}
+
+#modal
+{
+    width: 100%;
+    height: 100vw;
+    z-index: 100;
+    background-image: url(../img/carta.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 100% 100vh;
+    transition: all 0.8s ease-in-out;
+    animation: mymove3 2.7s infinite;
+    
+}
+
+#modalbanda
+{
+    position: relative;
+    background-image: url('../img/whites.gif');
+    background-size: 100%;
+    display: inline-block;
+    width: 100%; 
+    height: 40px;
+    opacity: 0.04;
+    animation: mymove 3s infinite;
+    box-shadow: 0 0 5px 15px #000;
+}
+
+#modalbanda2
+{
+    position: relative;
+    background-color: white;
+    background-size: 100%;
+    display: inline-block;
+    width: 100%; 
+    height: 80px;
+    opacity: 0.35;
+    animation: mymove2 9s infinite;
+    box-shadow: 0 0 5px 10px #FFF;
+}
+
+@keyframes mymove {
+    0%   {top: 0px;}
+    50%   {top: 100vh;}
+    100% {top: 0px;}
+  }
+
+  @keyframes mymove2 {
+    0%   {top: 0px;}
+    100% {top: 100vh;}
+  }
+
+  @keyframes mymove3 {
+    0%   {filter: blur(0px); filter: grayscale(10%);}
+    50%  {filter: blur(2px); filter: grayscale(50%);}
+    100% {filter: blur(0px); filter: grayscale(10%);}
+  }
+
+#modalText
+{
+    transition: all 0.2s ease-in-out;
+}
+
+#modalInner
+{
+    opacity: 0;
+    height: 211px;
+    width: 550px;
+    background-color: white;
+    border: solid black 8px;
+    font-size: 2em;
+    position: absolute;
+    left: 33%;
+    top: 60%;
+    padding: 5px 10px;
+    transition: all 0.8s ease-in-out;
+    z-index: 1000;
+}
+
+button
+{
+    margin-top: 30px;
+    margin-left:80px;
+}
+
+button:hover
+{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:focus
+{
+    outline-color: transparent;
+}
+
+main
+{
+    filter: brightness(0);
+}
+
+#cien,#siglas,#pag,#datetime
+{
+    color: white;
+    font-size: 1.8em;
+}
+
+#datetime
+{
+    float: right;
+    margin-right: 1.3%;
+    width: 400px;
+}
+
+#cien,#pag{margin-left: 60px;}
+
+#siglas
+{
+    margin-left: 630px;
+}
+
+#inicio,#cv,#contacto,#imagen
+{
+    width: 49.03%;
+    height: 20.5vw;
+    display: inline-block;
+    margin: 6px 0;
+    vertical-align: top;
+}
+
+#cv2
+{
+    padding-top: 45px;
+    width: 48.1%;
+    height: 308px;
+    display: inline-block;
+    background-color: yellow;
+    position: absolute;
+    right:2.4%;
+    top: 18.6%;
+    z-index: -1;
+}
+
+#pcv
+{
+    color: black;
+    font-weight: bold;
+    margin-top: 8px;
+    transition: all 0.4s ease-in-out;
+}
+
+#central
+{
+    width: 98.55%;
+    height: 60px;
+    background-color: white;
+}
+
+#top
+{
+    width: 98.55%;
+    height: 100px;
+    background-color: white;
+    font-size: 5em;
+    padding-left: 10px;
+}
+
+#inicio{background-color: red }
+#cv{background-color: lime; transition: all 0.6s ease-in-out; z-index: 100  ;}
+#contacto{background-color: yellow; transition: all 1s ease-in-out; position: relative;}
+#imagen{background-color: aqua;}
+#inicioText{color: yellow}
+#cvText{color: red}
+
+.titulo
+{
+    font-size: 2em;
+    margin-left: 40%;
+}
+
+.bloque
+{
+    margin: 0 8%;
+    font-size:2.5em;
+    color: white;
+    font-family: 'PIXELADE';
+}
+
+#centralText
+{
+    margin-left: 2%;
+    font-size: 3em;
+}
+
+#btnContacto
+{
+    position: absolute;
+    left: 42%;
+    top: 42%;
+    font-size: 3em;
+    border: solid black 4px;
+    padding: 6px;
+}
+
+#btnContacto:hover
+{
+    cursor: pointer;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.negro
+{
+    color: black;
+    font-size: 3.3em;
+}
+
+#imgyo
+{
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
