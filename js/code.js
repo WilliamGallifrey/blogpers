@@ -22,6 +22,17 @@ $(document).ready(function () {
 
 function openFullscreen() {
 
+    var elem = $('body')[0];
+    if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) {
+    elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) {
+    elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { 
+    elem.msRequestFullscreen();
+    }
+
     $('main').css('filter','brightness(1)');
     setTimeout(() => {
 
@@ -35,25 +46,17 @@ function openFullscreen() {
             $('#modal').css('opacity','0');
         }, 600);
 
-    }, 150);   
+    }, 550);   
     
     setTimeout(() => {
         $('#modalInner').css('display','none');
         $('#modal').css('display','none');
-        var elem = $('body')[0];
-        if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-        } else if (elem.mozRequestFullScreen) {
-        elem.mozRequestFullScreen();
-        } else if (elem.webkitRequestFullscreen) {
-        elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) { 
-        elem.msRequestFullscreen();
-        }
+    }, 1600); 
 
-        $
 
-    }, 1000);    
+       
+
+       
   }
 
   function noFullScreen()
