@@ -19,7 +19,9 @@
             <button onclick="openFullscreen();">Aceptar</button>
             <button onclick="noFullScreen()">Cancelar</button>
         </div>
-        
+        <div id="modalVideo" onclick="cerrarVideo()">
+            <div id="modalVideoInner"></div>
+        </div>
         <main>
     <header>
         <span id="cien">100</span>
@@ -32,7 +34,7 @@
         <div id="inicio">
             <span id="inicioText" class="titulo">INICIO</span>
             <p class="bloque">
-                ¡Hola! Soy Guillermo, desarrollador y diseñador web. Estoy actualemnte estudiando en el centro de estudios Florida el curso de DAW. He realizado ya algunos proyectos y estoy siempre abierto a empezar nuevos<br> Puedes ver mi videoCV <a href="">aquí</a>
+                ¡Hola! Soy Guillermo, desarrollador y diseñador web. Estoy actualemnte estudiando en el centro de estudios Florida el curso de DAW. He realizado ya algunos proyectos y estoy siempre abierto a empezar nuevos<br> Puedes ver mi videoCV <a href="javascript:verVideo()">aquí</a>
             </p>
         </div>
         <div id="cv">
@@ -49,7 +51,7 @@
 
         <div id="contacto">
             <span id="contactoTitulo" class="titulo">CONTACTO</span>
-            <span id="btnContacto" class="btn">MAIL</span>
+            <a href="contacto.php" target="_blank"><span id="btnContacto" class="btn">MAIL</span></a>
         </div>
         <div id="imagen">
             <img id= "imgyo" src="img/image.png" alt="">

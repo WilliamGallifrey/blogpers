@@ -83,7 +83,7 @@ $('#cv').hover(function(){
     $('#cv').css('background-color','magenta');
     $('#pcv').css('color','white');
     setTimeout(() => {
-        $('#cv').html('<p class="bloque">Idiomas:</p><p class="bloque">Inglés...........................................................................................C2</p><p class="bloque">Francés......................................................................................A2</p><p class="bloque">Valenciano.............................................................................Medio</p><p class="bloque">CV en <a href="">pdf</a></p>'); 
+        $('#cv').html('<p class="bloque">Idiomas:</p><p class="bloque">Inglés...........................................................................................C2</p><p class="bloque">Francés......................................................................................A2</p><p class="bloque">Valenciano.............................................................................Medio</p><p class="bloque">CV en <a href="cv.pdf" target="_blank">pdf</a></p>'); 
         $('#pcv').css('color','white');
     }, 400);
     
@@ -124,3 +124,26 @@ $('#contacto').mouseleave(function(){
     }, 400);
     
 });
+
+function verVideo() {
+    $('#modalVideo').css('opacity','1');
+    setTimeout(() => {
+        $('#modalVideo').css('width','100%');
+        setTimeout(() => {
+            $('#modalVideoInner').css('opacity','1');
+        }, 1000);
+        
+    }, 300);    
+}
+
+function cerrarVideo()
+{
+    $('#modalVideoInner').css('opacity','0');
+    setTimeout(() => {
+        $('#modalVideo').css('width','0px');
+        setTimeout(() => {
+            $('#modalVideo').css('opacity','0');
+        }, 300);
+        
+    }, 1000);    
+}

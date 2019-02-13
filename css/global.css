@@ -273,3 +273,30 @@ main
     height: 100%;
     transition: opacity 0.5s ease-in-out;
 }
+
+#modalVideo
+{
+    opacity: 0;
+    width: 0px;
+    height: 100vw;
+    z-index: 100;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.8s ease-in-out;
+}
+
+#modalVideoInner
+{
+    opacity: 0;
+    height: 90vh;
+    width: 90%;
+    background-color: white;
+    border: solid black 8px;
+    font-size: 2em;
+    position: absolute;
+    padding: 5px 10px;
+    transition: all 0.8s ease-in-out;
+    z-index: 1000;
+    left: 5%;
+    top: 2.5vh;
+}
