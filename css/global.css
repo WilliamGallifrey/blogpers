@@ -239,6 +239,17 @@ main
     font-family: 'PIXELADE';
 }
 
+.inline
+{
+    margin: 0 8%;
+    font-size: 2.5em;
+    color: black;
+    font-family: 'PIXELADE';
+    position: absolute;
+    width: 400px;
+    right: 10px;
+}
+
 #centralText
 {
     margin-left: 2%;
@@ -299,4 +310,33 @@ main
     z-index: 1000;
     left: 5%;
     top: 2.5vh;
+}
+
+#correo,#nombre,#textArea
+{
+    background-color: lightgrey;
+}
+
+#correo, #nombre
+{
+    display: block;
+    width: 400px;
+    height: 50px;
+    box-shadow: 5px 5px 5px;
+    font-size: 2.3em;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    margin-left: 35px;
+}
+
+#textArea
+{
+    margin-left:55px;
+    font-size: 2em;
+}
+
+#enviar
+{
+    font-size: 3em;
+    margin-left: 40px;
 }

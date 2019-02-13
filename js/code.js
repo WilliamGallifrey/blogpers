@@ -147,3 +147,8 @@ function cerrarVideo()
         
     }, 1000);    
 }
+
+function correo()
+{
+    $('#contacto').html('<input id="nombre" type="text" placeholder="Nombre"><input id="correo" type="text" placeholder="Correo"><textarea name="mensaje" id="textArea" cols="40" rows="5" placeholder="Mensaje"></textarea><a href="contacto.php" target="_blank"><input type="submit" id="enviar"></a>');
+}
